@@ -286,7 +286,7 @@ void DisplacedPhoton::analyze(const edm::Event& iEvent, const edm::EventSetup& i
             if (radius < 740 && radius > 400 && abs(gLLP_decay_vertex_z[1])< 650 ) gLLP_dt[1] = true;
 	  } // end of else
        	cout<<"CSC info for First and 2nd Photon "<<  gLLP_csc[0]  << " " << gLLP_csc[1] <<" DT info for Ist and 2nd Photon " << gLLP_dt[0] <<  " " << gLLP_dt[1] << endl;
-	if (gLLP_csc[0] == 1 || gLLP_csc[1] == 1)csc1_eventsx++;
+	if (gLLP_csc[0] == 1 || gLLP_csc[1] == 1)csc1_events++;
 	if (gLLP_csc[1] == 0 && gLLP_csc[1] == 0)csc2_events++;	
 	if (gLLP_dt[0] == 1)dt1_events++;
 	if (gLLP_dt[1] == 1)dt2_events++;
